@@ -170,6 +170,9 @@ img.post-image {
 h4.recent-post-title {
     font-size: 17px;
     font-weight: 500;
+    background: #ee3f00;
+    padding: 10px;
+    color: white;
 }
 h5.rpcb-title{font-size: 15px;}
 h3.post-title {
