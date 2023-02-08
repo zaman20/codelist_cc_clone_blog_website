@@ -19,6 +19,13 @@ $('document').ready(function(){
         $('.search-bar').removeClass('search-come');
         $('.search-icon-off').hide();
         $('.search-icon').show();
+     });
+
+     $('.sidebar-other').on('click',function(){
+        //alert('hi')
+        $('.sidebar-other').children('span').fadeToggle();
+        $('.other-menu nav').slideToggle();
+        
      })
     
 

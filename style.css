@@ -61,6 +61,52 @@ body{
     border-bottom: 4px solid blue;
     
 }
+.menu-area ul li{
+    position: relative;
+}
+.menu-area ul li ul{
+    width: 280px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: 33;
+    text-align: center;
+    box-shadow: 0 2px 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    transform: scaleY(0);
+}
+.menu-area ul li ul li{
+    display: block;
+    margin-left: -30px;
+    padding: 5px 4px;
+    padding-top: 15px;
+}
+.menu-area ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top:109%;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.menu-area ul li ul li ul{
+    top: 7px !important;
+    left:80%;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: .4s;
+    z-index: 2;
+    
+}
+.menu-area ul li ul li:hover ul{
+    left: 100%;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+}
 .register-btn {
     margin-right: 10px;
     height: 35px;
@@ -276,8 +322,6 @@ img.singl-post-image {
 .sidebar-logo img{width: 55%;}
 .sidebar-menu {
     margin-top: 20px;
-    border-bottom: 2px solid #d1d1d1;
-    padding-bottom: 11px;
 }
 .sidebar ul{margin-left: 10px;}
 .sidebar-menu ul li{
@@ -333,4 +377,49 @@ input.search-btn {
     text-transform: uppercase;
     border: 0px solid;
 }
-.phone{display: none;}
+.phone, .top-bar-phone{display: none;}
+.off,.other-menu nav{display: none;}
+.other-menu nav {
+    margin-top: -10px;
+}
+.other-menu ul{
+    width: 100%;
+    background:#fbfbfb;
+    
+}
+.other-menu ul li{
+    display: block;
+    padding: 3px 5px;
+    margin-left: -40px;
+
+}
+.other-menu ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+.other-menu ul li:hover{
+    background:#efefef;
+}
+.sidebar-other{
+    position: relative;
+    margin-top: -10px;
+    border-bottom: 2px solid #d1d1d1;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+.sidebar-other span i{
+    font-size: 16px;
+    position: absolute;
+    top:8px;
+    left:38%;
+}
+.sidebar-other p{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 13px;
+}
