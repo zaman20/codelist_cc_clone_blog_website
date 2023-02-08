@@ -74,7 +74,10 @@ body{
     width: 73%;
     float: left;
 }
-.add-part{
+.add-part-top img{
+    width: 100%;
+}
+.add-part, .add-part-top{
     margin-bottom: 20px;
     margin-top: 23px;
 }
@@ -114,7 +117,7 @@ img.post-image {
     width: 67%;
     float: left;
 }
-img.rpcb-img {
+.recent-post-content-box img {
     width: 33%;
     float: right;
 }
@@ -330,3 +333,4 @@ input.search-btn {
     text-transform: uppercase;
     border: 0px solid;
 }
+.phone{display: none;}

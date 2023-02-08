@@ -1,0 +1,35 @@
+@media only screen and (min-width:200px) and (max-width:999px){
+    .top-bar{display:none;}
+    .logo-area {width: 57%;margin-left: 20px;}
+    .menu-area {width:40%;margin-top: 4px;}
+    .login-area{width: 0;}
+    .menu-area span{margin-left: 5px;font-size: 19px;}
+    .menu-area i{margin-right: 10px;}
+    .search-come {top: 4%;}
+    .content-part{width:100%;}
+    .post-meta span{font-size: 13px;}
+    .right-side-part{width: 100%;margin-top: 50px;}
+    .recent-post-content-box img{width: 160px;}
+    .add-part img{width: 210px;}
+    .footer-part{height: 300px;}
+    .footer-right{width: 70%;}
+    .copyright-text {font-size: 12px;}
+    .footer-right ul li{padding:5px 3px;}
+    .recent-comment-box {margin-top: 50px;}
+    .open-menu {font-size: 22px;}
+    
+}
+@media only screen and (min-width:200px) and (max-width:448px){
+    .tab{display: none;}
+    .phone{display: block;}
+    .logo-area{width: 62%;}
+    .menu-area{width: 32%;}
+    .content-box{width: 90%;margin-left: 20px;}
+    .search-bar{top:-12%}
+    .recent-post-content-box img{width: 99px;}
+    .footer-part {height: 458px;padding: 31px 5px;}
+    .footer-content{width: 99%;text-align: center;}
+    .footer-left{width: 100%;}
+    .footer-right{width: 100%;text-align: center;}
+    .copyright-text {font-size: 14px;}
+}
