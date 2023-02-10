@@ -3,7 +3,9 @@
         <div class="top-bar">
                 <div class="logo-area">
                     <i class="fa-solid fa-bars open-menu"></i>
-                    <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="logo">
+                    <a href="<?php echo home_url();?>">
+                        <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="logo">
+                    </a>
                 </div>
                 <div class="menu-area">
                     <ul>
@@ -36,7 +38,9 @@
         <!-- top-bar-phone -->
         <div class="top-bar-phone">
             <div class="logo-area">
-                <img src="img/logo.png" alt="logo">
+                <a href="<?php echo home_url();?>">
+                    <img src="img/logo.png" alt="logo">
+                </a>
             </div>
             <div class="menu-area tab">
                 <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"> search</i></a>
@@ -63,7 +67,9 @@
     <div class="sidebar">
         <div class="close-icon"><i class="fa-solid fa-circle-xmark"></i></div>
         <div class="sidebar-logo">
-            <img src="img/logo.png" alt="">
+            <a href="<?php echo home_url();?>">
+                <img src="img/logo.png" alt="">
+            </a>
         </div>
     
         <div class="sidebar-menu">

@@ -2,9 +2,9 @@
 
 function mainStyle(){
     //style css
-    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.0');
+    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.10');
     //responsive css
-    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.0');
+    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.1');
     //font-awesome
     wp_enqueue_style('icon_lib',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
     //bootstrap css
@@ -17,11 +17,32 @@ function mainStyle(){
 }
 add_action('wp_enqueue_scripts', 'mainStyle');
 
+//theme support
+function theme_support(){
+    //fetures image calling
+    add_theme_support('post-thumbnails');
+
+}
+add_action('after_setup_theme','theme_support');
 
 
+//for counting post view
 
-
-
+/*
+ * Set post views count using post meta//functions.php
+ */
+function customSetPostViews($postID) {
+    $countKey = 'post_views_count';
+    $count = get_post_meta($postID, $countKey, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $countKey);
+        add_post_meta($postID, $countKey, '1');
+    }else{
+        $count++;
+        update_post_meta($postID, $countKey, $count);
+    }
+}
 
 
 
