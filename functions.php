@@ -32,11 +32,11 @@ function myMenu(){
       register_nav_menus(array(
         'Header Menu' => __('Primary Menu',''),
         'Sidebar Menu' => __('Sidebar Menu',''),
-        'Sidebar Menu' => __('Others Menu',''),
-        'Sidebar Menu' => __('Footer Menu',''),
+        'Others Menu' => __('Others Menu',''),
+        'Footer Menu' => __('Footer Menu',''),
     ));
 }
-
+add_filter('init','myMenu');
 
 
 //for counting post view
