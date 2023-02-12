@@ -21,7 +21,7 @@
                 <?php get_template_part('content'); ?>
 
                <!-- right side part -->
-               <?php get_template_part('right-side'); ?>
+               <?php get_template_part('trending'); ?>
 
             </div>
         </div>

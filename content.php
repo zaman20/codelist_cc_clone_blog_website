@@ -15,7 +15,7 @@
                         
       
                         <h3 class="post-title"><?php the_title();?></h3>
-                        <div class="post-details"><?php the_content() ;?></div>
+                        <div class="post-details"><?php echo wp_trim_words(get_the_content(),25); ?></div>
                         <div class="post-meta">
                             <span class="post-category"><?php $cat = get_the_category(); echo $cat[0]->cat_name;?></span>
                             <span class="post-date"><?php the_date();?></span>

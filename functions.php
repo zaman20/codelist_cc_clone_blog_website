@@ -2,7 +2,7 @@
 
 function mainStyle(){
     //style css
-    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.10');
+    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.18');
     //responsive css
     wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.1');
     //font-awesome
@@ -25,6 +25,19 @@ function theme_support(){
 }
 add_action('after_setup_theme','theme_support');
 
+//menu register
+function myMenu(){
+
+      //primary menu register
+      register_nav_menus(array(
+        'Header Menu' => __('Primary Menu',''),
+        'Sidebar Menu' => __('Sidebar Menu',''),
+        'Sidebar Menu' => __('Others Menu',''),
+        'Sidebar Menu' => __('Footer Menu',''),
+    ));
+}
+
+
 
 //for counting post view
 
@@ -44,11 +57,11 @@ function customSetPostViews($postID) {
     }
 }
 
+//codestar framework include
+require_once get_theme_file_path() .'/inc/codestar-framework-master/codestar-framework.php';
+//frame work start
+include_once('inc/frameworksetup.php');
 
 
 
 
-
-
-
-?>

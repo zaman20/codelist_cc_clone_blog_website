@@ -1,31 +1,17 @@
 <div class="header">
+<?php $my_options = get_option('my_option');?>
         <!-- top-bar-pc -->
         <div class="top-bar">
                 <div class="logo-area">
                     <i class="fa-solid fa-bars open-menu"></i>
                     <a href="<?php echo home_url();?>">
-                        <img src="<?php echo get_template_directory_uri()?>/img/logo.png" alt="logo">
+                        <img src="<?php echo $my_options['opt-logo'];?>" alt="">
                     </a>
                 </div>
                 <div class="menu-area">
-                    <ul>
-                        <li><a href="">PHP Script</a></li>
-                        <li><a href="">Mobile</a></li>
-                        <li><a href="">Wordpress</a>
-                            <ul>
-                                <li><a href="">Wordpress Theme</a></li>
-                                <li><a href="">Wordpress Plugin</a>
-                                        <ul>
-                                            <li><a href="">Plugin-1</a></li>
-                                            <li><a href="">Plugin-1</a></li>
-                                            <li><a href="">Plugin-1</a></li>
-                                            <li><a href="">Plugin-1</a></li>
-                                        </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">CMS</a></li>
-                    </ul>
+                    <?php wp_nav_menu(array('theme_location'=>'Header Menu'));
+                     ?>
+                   
                 </div>
                 <!-- right side are -->
                 <div class="login-area">
@@ -58,27 +44,24 @@
     </div>
     <!-- search bar -->
     <div class="search-bar">
-        <form action="" class="search-form">
+        <?php get_search_form();?>
+        <!-- <form action="" class="search-form">
             <input type="text" class="search-box" placeholder="SEARCH HERE">
             <input type="submit" class="search-btn" value="SEARCH NOW">
-        </form>
+        </form> -->
     </div>
     <!-- sidebar menu -->
     <div class="sidebar">
         <div class="close-icon"><i class="fa-solid fa-circle-xmark"></i></div>
         <div class="sidebar-logo">
             <a href="<?php echo home_url();?>">
-                <img src="img/logo.png" alt="">
+                <img src="<?php echo $my_options['opt-logo'];?>" alt="">
             </a>
         </div>
     
         <div class="sidebar-menu">
-            <ul>
-                <li><a href="">Php</a></li>
-                <li><a href="">Wordpress</a></li>
-                <li><a href="">Mobile</a></li>
-                <li><a href="">CMS</a></li>
-            </ul>
+         <?php wp_nav_menu(array('theme_location'=>'Sidebar Menu'));
+                     ?>
         </div>
         <div class="sidebar-other">
            <p>Others</p>  
@@ -86,11 +69,7 @@
             <span class="off"><i class="fa-solid fa-caret-up "></i></span>
             <div class="other-menu">
                <nav>
-                    <ul>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">DMS</a></li>
-                    </ul>
+               <?php wp_nav_menu(array('theme_location'=>'Others Menu'));?>
                </nav>
             </div>
         </div>
