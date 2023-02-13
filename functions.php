@@ -2,7 +2,7 @@
 
 function mainStyle(){
     //style css
-    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.33');
+    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.37');
     //responsive css
     wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.1');
     //font-awesome

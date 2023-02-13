@@ -561,3 +561,20 @@ span.required-field-message, span#email-notes {
     color: red;
 }
 #commentform p{font-weight: 700;}
+
+.pagination{
+    clear: both;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+a.page-numbers, span.page-numbers.current {
+    background: #EE3F00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+    color: white;
+    font-size: 17px;
+}
+span.page-numbers.current{
+    background: #adadad;
+}
