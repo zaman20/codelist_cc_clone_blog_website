@@ -38,8 +38,8 @@
                         <div class="post-content">
                             <?php the_post_thumbnail(); ?>
                         <p class="post-details"><?php the_content();?></p>
-
-                        <p class="link-box"><?php the_field('links_box');?></p>
+                         <?php if(the_field('links_box')!=null):?>   
+                        <p class="link-box"><?php the_field('links_box'); endif;?></p>
                         <p class="credit"><?php the_field('bottom_text');?></p>
 
                         </div>
@@ -63,7 +63,7 @@
 
                   <?php get_template_part('related-articles');?>
                     <!-- related article closed -->
-                    <?php comments_template('/comments.php'); ?>
+                    <?php comments_template(''); ?>
                 </div>
 
 

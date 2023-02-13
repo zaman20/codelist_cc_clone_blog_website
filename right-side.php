@@ -1,5 +1,4 @@
 
- 
  <!-- right side -->
  <div class="right-side-part">
      <!-- recent-post -->
@@ -46,25 +45,7 @@
      </div>
 
      <!-- recent-comment -->
-     <div class="recent-comment-box">
-         <h4 class="recent-post-title">RECENT <strong>COMMENTS</strong></h4>
-         <div class="comment-box">
-             <h4 class="comment-title">PRAKASHKS045:</h4>
-             <p class="comment-details">I will install and customize this script "ViserBank v2.0 - Digital Banking
-                 System" for you in very</p>
-         </div>
-         <!-- content -->
-         <div class="comment-box">
-             <h4 class="comment-title">PRAKASHKS045:</h4>
-             <p class="comment-details">I will install and customize this script "ViserBank v2.0 - Digital Banking
-                 System" for you in very</p>
-         </div>
-         <div class="comment-box">
-             <h4 class="comment-title">PRAKASHKS045:</h4>
-             <p class="comment-details">I will install and customize this script "ViserBank v2.0 - Digital Banking
-                 System" for you in very</p>
-         </div>
-     </div>
+     <?php get_template_part('recent-comments');?>
 
      <!-- add section -->
      <div class="add-part">

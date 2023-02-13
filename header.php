@@ -9,8 +9,40 @@
                     </a>
                 </div>
                 <div class="menu-area">
-                    <?php wp_nav_menu(array('theme_location'=>'Header Menu'));
-                     ?>
+                    <div class="g-menu">
+                        <?php wp_nav_menu(array('theme_location'=>'Header Menu'));?>
+                    </div>
+                    
+                    <div class="mega-menu">
+                        <ul>
+                            <li><a href="">CMS & Ecoomerce </a>
+                                <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
+                                    <!-- <ul>
+                                        <li><a href="">Ecommerce</a>
+                                            <ul>
+                                                <li><a href="">a</a></li>
+                                                <li><a href="">a</a></li>
+                                                <li><a href="">b</a></li>
+                                                <li><a href="">c</a></li>
+                                                <li><a href="">d</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Others</a>
+                                            <ul>
+                                                <li><a href="">a</a></li>
+                                                <li><a href="">a</a></li>
+                                                <li><a href="">b</a></li>
+                                                <li><a href="">c</a></li>
+                                                <li><a href="">d</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Cms Template</a></li>
+                                    </ul> -->
+                            </li>
+                        </ul>
+                    </div>
+
+                    
                    
                 </div>
                 <!-- right side are -->

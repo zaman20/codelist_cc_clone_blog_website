@@ -29,7 +29,7 @@ if( class_exists( 'CSF' ) ) {
     ) );
   
     //
-    // Create a section
+    // Create a section for logo
     CSF::createSection( $prefix, array(
       'title'  => 'Logo',
       'fields' => array(
@@ -43,6 +43,73 @@ if( class_exists( 'CSF' ) ) {
   
       )
     ) );
+
+     // Create a section for logo
+     CSF::createSection( $prefix, array(
+      'title'  => 'Recent Comments',
+      'fields' => array(
+  
+        // For Comment-1
+        array(
+          'id'    => 'opt-name',
+          'type'  => 'text',
+          'title' => 'Name',
+        ),
+        array(
+          'id'    => 'opt-comment',
+          'type'  => 'textarea',
+          'title' => 'Comment',
+        ),
+        // For Comment-2
+        array(
+          'id'    => 'opt-name1',
+          'type'  => 'text',
+          'title' => 'Name',
+        ),
+        array(
+          'id'    => 'opt-comment1',
+          'type'  => 'textarea',
+          'title' => 'Comment',
+        ),
+        // For Comment-3
+        array(
+          'id'    => 'opt-name2',
+          'type'  => 'text',
+          'title' => 'Name',
+        ),
+        array(
+          'id'    => 'opt-comment2',
+          'type'  => 'textarea',
+          'title' => 'Comment',
+        ),
+        // For Comment-4
+        array(
+          'id'    => 'opt-name3',
+          'type'  => 'text',
+          'title' => 'Name',
+        ),
+        array(
+          'id'    => 'opt-comment3',
+          'type'  => 'textarea',
+          'title' => 'Comment',
+        ),
+        // For Comment-5
+        array(
+          'id'    => 'opt-name4',
+          'type'  => 'text',
+          'title' => 'Name',
+        ),
+        array(
+          'id'    => 'opt-comment4',
+          'type'  => 'textarea',
+          'title' => 'Comment',
+        ),
+
+  
+      )
+    ) );
+
+  
   
   }
   
