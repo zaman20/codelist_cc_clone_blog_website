@@ -14,10 +14,11 @@
                     </div>
                     
                     <div class="mega-menu">
-                        <ul>
+                        <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
+                        <!-- <ul>
                             <li><a href="">CMS & Ecoomerce </a>
-                                <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
-                                    <!-- <ul>
+                               
+                                    <ul>
                                         <li><a href="">Ecommerce</a>
                                             <ul>
                                                 <li><a href="">a</a></li>
@@ -37,9 +38,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="">Cms Template</a></li>
-                                    </ul> -->
+                                    </ul> 
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
 
                     
@@ -47,7 +48,7 @@
                 </div>
                 <!-- right side are -->
                 <div class="login-area">
-                    <a href="#" class="btn btn-light register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
+                    <a href="#" class="register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
                     <p>Welcome, <strong>guest</strong></p>
                     <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
                     <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"></i></a>

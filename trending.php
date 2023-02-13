@@ -2,7 +2,8 @@
  <div class="right-side-part">
      <!-- recent-post -->
      <div class="recent-post-box">
-         <h4 class="recent-post-title">Trending <strong>Now</strong></h4>
+         <h4 class="recent-post-title"><i class="fa-solid fa-bolt-lightning"></i>
+            Trending <strong>Now</strong></h4>
          <!-- content -->
          <?php  query_posts('meta_key=post_views_count&posts_per_page=5&orderby=meta_value_num&
     order=DESC');

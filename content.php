@@ -28,8 +28,8 @@
     <?php endwhile; }?>
     <div class="pagination">
         <?php  the_posts_pagination(array(
-            'prev_text' => '<i class="fa-solid fa-chevron-left"></i>',
-            'next_text' => '<i class="fa-solid fa-chevron-right"></i>',
+            'prev_text' => 'Previous',
+            'next_text' => 'Next',
         ));?>
     </div>
 </div>
