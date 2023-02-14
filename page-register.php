@@ -17,9 +17,17 @@
     <div class="container content-area">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="archive-title"><?php the_archive_title();?></h3>
-                <!-- content part -->
-                <?php get_template_part('content'); ?>
+                <div class="content-part">
+
+                <h3 class="registration-title">Site <strong>Registration</strong></h3>
+
+                <div class="regis-notice">
+                    <p>Registering on our site will allow you full membership access. You will be able to post comments, read hidden text and more. Registration requires e-mail verification. In case of any problems please contact our site admins.</p>
+                </div>
+                    <!-- content part -->
+                    <?php the_content(); ?>
+                </div>
+                
 
                <!-- right side part -->
                <?php get_template_part('trending'); ?>

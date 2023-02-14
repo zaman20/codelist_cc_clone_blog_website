@@ -2,7 +2,8 @@
  <div class="footer-part">
         <div class="footer-content">
             <div class="footer-left">
-                <p>...codelist.cc</p>
+                <i class="fa-solid fa-ellipsis"></i>
+                <span class="footer-logo">codelist.cc</span>
             </div>
             <div class="footer-right">
             <?php $my_options = get_option('my_option');?>
@@ -11,7 +12,7 @@
             <div class="footer-divider"></div>
     
             <div class="footer-left">
-                <p class="copyright-text">Copyright © 2022 - CODELIST.CC ❤️<a href="https://www.facebook.com/ZamanAdor20/">ZAMAN</a> </p>
+                <p class="copyright-text">Copyright © 2022 - CODELIST.CC ❤️<a href="https://www.facebook.com/ZamanAdor20/">ZASOFT</a> </p>
             </div>
             <div class="footer-right">
                 <?php wp_nav_menu(array('theme_location'=>'Footer Menu'));?>

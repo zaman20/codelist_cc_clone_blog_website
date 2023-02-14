@@ -4,7 +4,7 @@
 
     <!-- content -->
     <div class="comment-box">
-        <h4 class="comment-title"><i class="fa-solid fa-message"></i><?php echo $my_options['opt-name'];?>:</h4>
+        <h4 class="comment-title"><?php echo $my_options['opt-name'];?>:</h4>
         <p class="comment-details"><?php echo $my_options['opt-comment'];?></p>
     </div>
 

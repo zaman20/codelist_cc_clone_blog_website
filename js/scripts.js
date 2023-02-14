@@ -26,12 +26,22 @@ $('document').ready(function(){
         $('.sidebar-other').children('span').fadeToggle();
         $('.other-menu nav').slideToggle();
         
+     });
+
+     $('.login-register-btn').on('click',function(){
+        
+        $('.login-form').addClass('login-form-come');
+        //$('.other-menu nav').slideToggle();
+        
+     });
+
+     $('.close-menu-icon').on('click',function(){
+        
+        $('.login-form').removeClass('login-form-come');
+        //$('.other-menu nav').slideToggle();
+        
      })
     
-
-
-
-
 
 
 
