@@ -14,26 +14,22 @@
     <?php get_header();?>
 
     <!-- body content -->
-    <div class="container content-area">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="content-part">
+    <div class="content-area">
 
-                <h3 class="registration-title">Site <strong>Registration</strong></h3>
+         <div class="content-part">
 
-                <div class="regis-notice">
-                    <p>Registering on our site will allow you full membership access. You will be able to post comments, read hidden text and more. Registration requires e-mail verification. In case of any problems please contact our site admins.</p>
-                </div>
+                    <h3 class="registration-title">Site <strong>Registration</strong></h3>
+
+                    <div class="regis-notice">
+                        <p>Registering on our site will allow you full membership access. You will be able to post comments, read hidden text and more. Registration requires e-mail verification. In case of any problems please contact our site admins.</p>
+                    </div>
                     <!-- content part -->
                     <?php echo do_shortcode('[ultimatemember form_id="5"]');?>
-                </div>
-                
-
-               <!-- right side part -->
-               <?php get_template_part('trending'); ?>
-
-            </div>
-        </div>
+         </div>
+         
+        <!-- right side part -->
+        <?php get_template_part('trending'); ?>
+        
     </div>
 
    .<!-- footer -->

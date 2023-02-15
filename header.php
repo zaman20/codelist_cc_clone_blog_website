@@ -3,7 +3,8 @@
         <!-- top-bar-pc -->
         <div class="top-bar">
                 <div class="logo-area">
-                    <i class="fa-solid fa-bars open-menu"></i>
+                    <span class="material-symbols-outlined open-menu"> menu </span>
+                    <!-- <i class="fa-solid fa-bars open-menu"></i> -->
                     <a href="<?php echo home_url();?>">
                         <img src="<?php echo $my_options['opt-logo'];?>" alt="">
                     </a>
