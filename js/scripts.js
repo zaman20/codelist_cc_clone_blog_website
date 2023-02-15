@@ -42,10 +42,13 @@ $('document').ready(function(){
         
      });
     
-  $('.catlist').on('click',function(){
+  $('.cat-box').on('click','li',function(){
       //alert('hi');
       var slug = $(this).data('slug');
       $('#catName').val(slug);
+      $(".cat-box li.active").removeClass("active"); 
+      $(this).addClass('active');
+      
   })
 
 

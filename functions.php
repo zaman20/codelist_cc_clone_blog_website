@@ -2,9 +2,9 @@
 
 function mainStyle(){
     //style css
-    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.0.100');
+    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.1.7');
     //responsive css
-    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.1');
+    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.12');
     //font-awesome
     wp_enqueue_style('icon_lib',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
     //bootstrap css
@@ -12,7 +12,7 @@ function mainStyle(){
 
    //js
    wp_enqueue_script('jq',"https://code.jquery.com/jquery-3.6.3.min.js");
-   wp_enqueue_script('main_js',get_template_directory_uri().'/js/scripts.js',array(),'1.0.9','true');
+   wp_enqueue_script('main_js',get_template_directory_uri().'/js/scripts.js',array(),'1.0.13','true');
     
 }
 add_action('wp_enqueue_scripts', 'mainStyle');
@@ -57,6 +57,20 @@ function customSetPostViews($postID) {
         update_post_meta($postID, $countKey, $count);
     }
 }
+
+//widget register
+function za_widgets(){
+    register_sidebar(array(
+        'name'=>__('Monthly Popular'),
+        'id'=>'home-1',
+        'before_title'=>'<h3 class="popular-title">',
+        'after_title'=>'</h3>',
+    ));
+}
+add_action('widgets_init','za_widgets');
+
+
+
 
 //codestar framework include
 require_once get_theme_file_path() .'/inc/codestar-framework-master/codestar-framework.php';

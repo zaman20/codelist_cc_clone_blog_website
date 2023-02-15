@@ -25,7 +25,7 @@
                     <p>Registering on our site will allow you full membership access. You will be able to post comments, read hidden text and more. Registration requires e-mail verification. In case of any problems please contact our site admins.</p>
                 </div>
                     <!-- content part -->
-                    <?php the_content(); ?>
+                    <?php echo do_shortcode('[ultimatemember form_id="5"]');?>
                 </div>
                 
 

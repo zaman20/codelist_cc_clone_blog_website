@@ -100,13 +100,13 @@
                         <label for="">Search By category</label>
                         <div class="cat-box">
                             <ul>
-                              <li <?php   if(empty($_GET['category'])):?> id="active" <?php endif;?> class="catlist" >
+                              <li <?php   if(empty($_GET['category'])):?>class="active" <?php endif;?>  >
                                 <a href="#" >--Search in all sections--</a>
                              </li>
 
                               <?php foreach($cats as $cat):?>
-                                <li <?php if(isset($_GET['category']) && ( $_GET['category'] == $cat->slug)): ?> 
-                                    id="active"<?php endif;?> data-slug="<?php echo $cat->slug;?>" class="catlist" >
+                                <li <?php if(isset($_GET['category']) && ( $_GET['category'] == $cat->slug)): ?>class="active" 
+                                    <?php endif;?> data-slug="<?php echo $cat->slug;?>"  >
                                     <a href="#" >
                                     <?php echo $cat->name;?>
                                 </a></li>

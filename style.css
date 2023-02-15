@@ -243,7 +243,7 @@ body a{
 .add-part img{width: 100%;}
 .content-box {
     width: 45%;
-    height: 455px;
+    height: 489px;
     float: left;
     border-bottom: 1px solid #eae7e7;
     margin-left: 30px;
@@ -520,7 +520,7 @@ p.comment-details {
     transition: .3s;
     z-index: 8;
 }
-.search-come{top:40px;}
+.search-come{top:12px;}
 .search-icon-off{display: none;}
 .search-form,.searchform {
     width: 80%;
@@ -537,7 +537,7 @@ p.comment-details {
    
 } */
 
-.phone, .top-bar-phone{display: none;}
+.phone, .top-bar-phone, .tab{display: none;}
 .off,.other-menu nav{display: none;}
 .other-menu nav {
     margin-top: -10px;
@@ -610,7 +610,12 @@ p.comment-details {
 .comment-form input[type ='text']{
     border: 2px solid #cbc0c0;
 }
-.comment-form input[type='submit'] {background: #ee3f00;}
+.comment-form input[type='submit'] {
+    background: #ee3f00;
+    border: 0px solid white;
+    color: white;
+    padding: 9px 15px;
+}
 .comment-form label {
     display: block;
 }
@@ -1011,11 +1016,16 @@ span.shows {
     color: white;
     cursor:pointer;
 }
-#active{background:#f2eeee;}
+.active{background:#f2eeee;}
 
 .um.um-register.um-5.uimob500 {
     max-width: 90% !important;
 }
 .um {
     width: 90% !important;
+}
+li#block-7 {
+    display: block;
+    padding: 15px 5px;
+    margin-bottom: 5px;
 }

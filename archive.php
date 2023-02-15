@@ -17,9 +17,12 @@
     <div class="container content-area">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="archive-title"><?php the_archive_title();?></h3>
+                <h3 class="archive-title"><?php  the_archive_title();?></h3>
                 <!-- content part -->
-                <?php get_template_part('content'); ?>
+                
+                    <?php get_template_part('content'); ?>
+              
+                
 
                <!-- right side part -->
                <?php get_template_part('trending'); ?>

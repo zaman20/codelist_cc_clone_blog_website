@@ -30,7 +30,7 @@
                     <div class="single-content-box">
                         <h3 class="single-post-title"><?php the_title();?></h3>
                         <div class="post-meta">
-                            <span class="post-author"><?php  the_author();?></span>
+                            <span class="post-author">By <?php  the_author();?></span>
                             <span class="post-date"><?php the_date();?></span>
                             <span class="post-comment">Comments: <?php comments_number();?></span>
                             <span class="post-view">Views:<?php $post_views_count = get_post_meta( get_the_ID(), 'post_views_count', true ); echo $post_views_count;?></span>
@@ -38,8 +38,7 @@
                         <div class="post-content">
                             <?php the_post_thumbnail(); ?>
                         <p class="post-details"><?php the_content();?></p>
-                         <?php if(the_field('links_box')!=null):?>   
-                        <p class="link-box"><?php the_field('links_box'); endif;?></p>
+                        <p class="link-box"><?php the_field('links_box');?></p>
                         <p class="credit"><?php the_field('bottom_text');?></p>
 
                         </div>

@@ -43,8 +43,22 @@ if( class_exists( 'CSF' ) ) {
   
       )
     ) );
+    // Create a section for facebook
+    CSF::createSection( $prefix, array(
+      'title'  => 'facebook',
+      'fields' => array(
+  
+        // A textarea field
+        array(
+          'id'    => 'opt-fb',
+          'type'  => 'text',
+          'title' => 'Facebook URL',
+        ),
+  
+      )
+    ) );
 
-     // Create a section for logo
+     // Create a section for comments
      CSF::createSection( $prefix, array(
       'title'  => 'Recent Comments',
       'fields' => array(

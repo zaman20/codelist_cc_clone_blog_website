@@ -15,32 +15,7 @@
                     
                     <div class="mega-menu">
                         <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
-                        <!-- <ul>
-                            <li><a href="">CMS & Ecoomerce </a>
-                               
-                                    <ul>
-                                        <li><a href="">Ecommerce</a>
-                                            <ul>
-                                                <li><a href="">a</a></li>
-                                                <li><a href="">a</a></li>
-                                                <li><a href="">b</a></li>
-                                                <li><a href="">c</a></li>
-                                                <li><a href="">d</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="">Others</a>
-                                            <ul>
-                                                <li><a href="">a</a></li>
-                                                <li><a href="">a</a></li>
-                                                <li><a href="">b</a></li>
-                                                <li><a href="">c</a></li>
-                                                <li><a href="">d</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="">Cms Template</a></li>
-                                    </ul> 
-                            </li>
-                        </ul> -->
+                   
                     </div>
 
                     
@@ -58,7 +33,7 @@
         <div class="top-bar-phone">
             <div class="logo-area">
                 <a href="<?php echo home_url();?>">
-                    <img src="img/logo.png" alt="logo">
+                    <img src="<?php echo $my_options['opt-logo'];?>" alt="logo" >
                 </a>
             </div>
             <div class="menu-area tab">
@@ -88,7 +63,7 @@
                 <a href="<?php echo home_url();?>">
                     <img src="<?php echo $my_options['opt-logo'];?>" alt="">
                 </a>
-                <a href="">
+                <a href="<?php echo $my_options['opt-fb'];?>" taget="__blank">
                 <i class="fa-brands fa-facebook-f"></i></a>
             </div>
         
@@ -109,22 +84,8 @@
             <!-- monthly  -->
             <div class="monthly-box">
                 <h2>Monthly Popular</h2>
-                <h3 class="popular-title">
-                    <a href="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.
-                    </a>
-                </h3>
-
-                <h3 class="popular-title">
-                    <a href="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.
-                    </a>
-                </h3>
-                <h3 class="popular-title">
-                    <a href="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, illo.
-                    </a>
-                </h3>
+             <?php dynamic_sidebar('home-1');?>
+                
             </div>
 
             <!-- login logout -->

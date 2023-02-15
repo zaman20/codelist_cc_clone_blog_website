@@ -8,15 +8,17 @@
          <?php  query_posts('meta_key=post_views_count&posts_per_page=5&orderby=meta_value_num&
     order=DESC');
           if(have_posts()):while(have_posts()):the_post(); ?>
-            <div class="recent-post-content-box">
-                <div class="rpcb-content">
-                    <h5 class="rpcb-title"><?php the_title();?></h5>
-                    <span class="rpcb-meta-date"><?php the_date();?></span>
-                    <span class="rpcb-meta-time">17:31</span>
-                    <span class="rpcb-meta-comment"><?php comments_number();?></span>
+            <a href="<?php the_permalink();?>">
+                <div class="recent-post-content-box">
+                    <div class="rpcb-content">
+                        <h5 class="rpcb-title"><?php the_title();?></h5>
+                        <span class="rpcb-meta-date"><?php the_date();?></span>
+                        <span class="rpcb-meta-time">17:31</span>
+                        <span class="rpcb-meta-comment"><?php comments_number();?></span>
+                    </div>
+                    <?php the_post_thumbnail();?>
                 </div>
-                <?php the_post_thumbnail();?>
-            </div>
+            </a>
          <?php endwhile;endif; wp_reset_query(); ?>
 
      </div>
