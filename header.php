@@ -38,9 +38,10 @@
                 </a>
             </div>
             <div class="menu-area tab">
-                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"> search</i></a>
-                <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"> search</i></a>
-               <i class="fa-solid fa-bars open-menu"> Menu</i>
+                <li><a href="#" class="search-icon">search<i class="fa-solid fa-magnifying-glass"> </i></a></li>
+                <li><a href="#" class="search-icon-off">search<i class="fa-solid fa-magnifying-glass"> </i></a></li>
+               <li><a href="#" class="open-menu">Menu</a><span class="material-symbols-outlined open-menu">menu</span></li>
+               <li><a href="#" class="loginBtn"><i class="fa-solid fa-user userIcon"></i></a></li>
             </div>
             <div class="menu-area phone">
                 <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -91,7 +92,7 @@
 
             <!-- login logout -->
             <div class="login-logout">
-                <a href="#" class="login-register-btn" ><i class="fa-solid fa-user"></i>Login/Sign Up</a>
+                <a href="#" class="login-register-btn loginBtn" ><i class="fa-solid fa-user"></i>Login/Sign Up</a>
             </div>
     </div>
     

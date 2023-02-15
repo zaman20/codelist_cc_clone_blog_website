@@ -1,9 +1,9 @@
 @media only screen and (min-width:200px) and (max-width:999px){
     .top-bar{display:none;}
-    .logo-area {width: 57%;margin-left: 20px;}
-    .menu-area {width:40%;margin-top: 4px;}
+    .logo-area {width: 50%;margin-left: 20px;}
+    .menu-area {width:44%;margin-top: 0px;}
     .login-area{width: 0;}
-    .menu-area span{margin-left: 5px;font-size: 19px;}
+    .menu-area span{margin-left: 5px;font-size: 23px;}
     .menu-area i{margin-right: 10px;}
     .search-come {top: 10px;}
     .content-part{width:100%;}
@@ -24,6 +24,7 @@
     .search-submit{width:140px;}
     .advanced-search{width:50%;}
     .login-form{width:50%;}
+    .content-box{width: 32%;}
 }
 @media only screen and (min-width:200px) and (max-width:448px){
     .tab{display: none;}

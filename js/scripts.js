@@ -28,7 +28,7 @@ $('document').ready(function(){
         
      });
 
-     $('.login-register-btn').on('click',function(){
+     $('.loginBtn').on('click',function(){
         
         $('.login-form').addClass('login-form-come');
         //$('.other-menu nav').slideToggle();
