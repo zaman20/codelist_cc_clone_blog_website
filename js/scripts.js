@@ -40,9 +40,13 @@ $('document').ready(function(){
         $('.login-form').removeClass('login-form-come');
         //$('.other-menu nav').slideToggle();
         
-     })
+     });
     
-
+  $('.catlist').on('click',function(){
+      //alert('hi');
+      var slug = $(this).data('slug');
+      $('#catName').val(slug);
+  })
 
 
     // end

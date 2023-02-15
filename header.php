@@ -78,7 +78,7 @@
     <!-- search bar -->
     <div class="search-bar">
         <?php get_search_form();?>
-        <a href="" class="advanced-search">Advanced Search</a>
+        <a href="<?php echo home_url('/advancedsearch');?>" class="advanced-search">Advanced Search</a>
     </div>
     <!-- sidebar menu -->
    
@@ -137,7 +137,7 @@
     <div class="login-form">
         <span class="close-menu-icon"><i class="fa-solid fa-circle-xmark"></i></span>
         <h3 class="login-title">Login here</h3>
-        <?php echo do_shortcode('[ultimatemember form_id="62"]');?>
+        <?php echo do_shortcode('[ultimatemember form_id="6"]');?>
         <a href="<?php echo home_url();?>/password-reset" class="lgpage-create-ac">Lost Password</a>
         <a href="<?php echo home_url();?>/register" class="lgpage-create-ac">Create New Account</a>
     </div>
