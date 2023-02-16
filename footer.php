@@ -1,5 +1,6 @@
  <!-- footer -->
- <div class="footer-part">
+<div class="footer-part">
+    <div class="container">
         <div class="footer-content">
             <div class="footer-left">
                 <i class="fa-solid fa-ellipsis"></i>
@@ -19,5 +20,7 @@
             </div>
         </div>
     </div>
+       
+</div>
     
     <!-- footer closed-->

@@ -13,12 +13,14 @@
     <?php get_header();?>
 
     <!-- body content -->
-    <div class="content-area">
-        <!-- content part -->
-        <?php get_template_part('content'); ?>
+    <div class="container">
+        <div class="content-area">
+            <!-- content part -->
+            <?php get_template_part('content'); ?>
 
-        <!-- right side part -->
-        <?php get_template_part('trending'); ?>
+            <!-- right side part -->
+            <?php get_template_part('trending'); ?>
+        </div>
     </div>
 
    .<!-- footer -->

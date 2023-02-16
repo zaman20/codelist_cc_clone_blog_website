@@ -1,35 +1,38 @@
 <div class="header">
 <?php $my_options = get_option('my_option');?>
         <!-- top-bar-pc -->
-        <div class="top-bar">
-                <div class="logo-area">
-                    <span class="material-symbols-outlined open-menu"> menu </span>
-                    <!-- <i class="fa-solid fa-bars open-menu"></i> -->
-                    <a href="<?php echo home_url();?>">
-                        <img src="<?php echo $my_options['opt-logo'];?>" alt="">
-                    </a>
-                </div>
-                <div class="menu-area">
-                    <div class="g-menu">
-                        <?php wp_nav_menu(array('theme_location'=>'Header Menu'));?>
+        <div class="container">
+            <div class="top-bar">
+                    <div class="logo-area">
+                        <span class="material-symbols-outlined open-menu"> menu </span>
+                        <!-- <i class="fa-solid fa-bars open-menu"></i> -->
+                        <a href="<?php echo home_url();?>">
+                            <img src="<?php echo $my_options['opt-logo'];?>" alt="">
+                        </a>
                     </div>
+                    <div class="menu-area">
+                        <div class="g-menu">
+                            <?php wp_nav_menu(array('theme_location'=>'Header Menu'));?>
+                        </div>
+                        
+                        <div class="mega-menu">
+                            <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
                     
-                    <div class="mega-menu">
-                        <?php wp_nav_menu(array('theme_location'=>'Mega Menu')); ?>
-                   
-                    </div>
+                        </div>
 
+                        
                     
-                   
-                </div>
-                <!-- right side are -->
-                <div class="login-area">
-                    <a href="<?php echo home_url();?>/register/" class="register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
-                    <p>Welcome, <strong>guest</strong></p>
-                    <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"></i></a>
-                </div>
+                    </div>
+                    <!-- right side are -->
+                    <div class="login-area">
+                        <a href="<?php echo home_url();?>/register/" class="register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
+                        <p>Welcome, <strong>guest</strong></p>
+                        <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+            </div>
         </div>
+
         <!-- top-bar-phone -->
         <div class="top-bar-phone">
             <div class="logo-area">
@@ -44,9 +47,10 @@
                <li><a href="#" class="loginBtn"><i class="fa-solid fa-user userIcon"></i></a></li>
             </div>
             <div class="menu-area phone">
-                <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"></i></a>
-               <i class="fa-solid fa-bars open-menu"></i>
+                <li><a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"> </i></a></li>
+                <li><a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"> </i></a></li>
+                <li><a href="#" class="open-menu"></a><span class="material-symbols-outlined open-menu">menu</span></li>
+                <li><a href="#" class="loginBtn"><i class="fa-solid fa-user userIcon"></i></a></li>
             </div>
            
           

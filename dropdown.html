@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu ul li{
+            display:block;
+        padding: 5px 10px;
+        background:black;
+        }
+        .menu ul li a{color: white;text-decoration: none;}
+        .menu ul li ul{width:200px; height: 200px;
+        top:100%;left: 0px;
+        background:orange;
+        display: none;
+        }
+        .menu ul li ul li{
+            display: block;
+            padding: 10px
+        }
+        .menu ul li ul li ul{background:green;display: none;}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">about</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">terms</a>
+                    </li>
+                    <li><a href="">page</a></li>
+                </ul>
+            </li>
+            <li><a href="">terms</a></li>
+            <li><a href="">page</a></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $('.menu > ul> li>a').on('click',function(){
+            //alert('hi');
+            $(this).parent().siblings().find('ul').fadeToggle(500);
+            $(this).next('ul').stop(true,false,true).slideToggle(500);
+            return false;
+        })
+        $('.menu > ul> li>ul>li>a').on('click',function(){
+            //alert('hi');
+            $(this).parent().siblings().find('ul').fadeToggle(500);
+            $(this).next('ul').stop(true,false,true).slideToggle(500);
+            return false;
+        })
+    </script>
+
+</body>
+</html>
