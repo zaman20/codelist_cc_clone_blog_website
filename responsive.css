@@ -81,7 +81,7 @@
     .copyright-text {font-size: 14px;}
     .menu-area.tab{display: none;}
     .menu-area.phone{display:block;}
-    .logo-area img{width: 185px;}
+    .logo-area img{width: 100%;}
     .search-bar{width:100%;height: 145px;}
     .search-form, .searchform{position: relative;}
     input.search-field{width: 100%;font-size: 17px;margin-top: 13px;}
