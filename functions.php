@@ -2,9 +2,9 @@
 
 function mainStyle(){
     //style css
-    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.1.24');
+    wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.1.69');
     //responsive css
-    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.27');
+    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.28');
     //font-awesome
     wp_enqueue_style('icon_lib',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
     //google apis
@@ -14,7 +14,7 @@ function mainStyle(){
 
    //js
    wp_enqueue_script('jq',"https://code.jquery.com/jquery-3.6.3.min.js");
-   wp_enqueue_script('main_js',get_template_directory_uri().'/js/scripts.js',array(),'1.0.14','true');
+   wp_enqueue_script('main_js',get_template_directory_uri().'/js/scripts.js',array(),'1.0.50','true');
     
 }
 add_action('wp_enqueue_scripts', 'mainStyle');
@@ -33,8 +33,13 @@ function myMenu(){
       //primary menu register
       register_nav_menus(array(
         'Header Menu' => __('Primary Menu',''),
+        'User Menu' => __('User Menu',''),
         'Sidebar Menu' => __('Sidebar Menu',''),
-        'Others Menu' => __('Others Menu',''),
+        'Sidebar Script Menu' => __('Sidebar Script Menu',''),
+        'Sidebar Wordpress Menu' => __('Sidebar Wordpress Menu',''),
+        'Sidebar Mobile Menu' => __('Sidebar Mobile Menu',''),
+        'Sidebar Other Menu' => __('Sidebar Other Menu',''),
+        'Sidebar CMS Menu' => __('Sidebar CMS Menu',''),
         'Footer Menu' => __('Footer Menu',''),
         'Mega Menu' => __('Mega Menu',''),
     ));

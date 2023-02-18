@@ -26,7 +26,11 @@
                     <!-- right side are -->
                     <div class="login-area">
                         <a href="<?php echo home_url();?>/register/" class="register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
-                        <p>Welcome, <strong>guest</strong></p>
+                        <p>Welcome,</p>
+                        <nav><?php wp_nav_menu(array('theme_location'=>'User Menu'));?></nav>
+                        <!-- <ul>
+                            <li><a href="">guest</a></li>
+                        </ul> -->
                         <a href="#" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
                         <a href="#" class="search-icon-off"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
@@ -72,21 +76,78 @@
                 <a href="<?php echo $my_options['opt-fb'];?>" taget="__blank">
                 <i class="fa-brands fa-facebook-f"></i></a>
             </div>
+
+
+            <!-- sidebar script menu -->
+            <div class="sidebar-other sidebarall">
+                <p class="sidebar-title">Script</p>  
         
-            <div class="sidebar-menu">
-            <?php wp_nav_menu(array('theme_location'=>'Sidebar Menu'));
-                        ?>
-            </div>
-            <div class="sidebar-other">
-            <p>Others</p>  
-                <span><i class="fa-solid fa-caret-down "></i></span>
-                <span class="off"><i class="fa-solid fa-caret-up "></i></span>
-                <div class="other-menu">
+                <div class="other-menu-s">
                 <nav>
-                <?php wp_nav_menu(array('theme_location'=>'Others Menu'));?>
+                <?php wp_nav_menu(array('theme_location'=>'Sidebar Script Menu'));?>
                 </nav>
                 </div>
             </div>
+
+            <!-- sidebar wordpress menu -->
+            <div class="sidebar-wordpress sidebarall">
+                <p class="sidebar-title">Wordpress</p>  
+                <div class="other-menu-w">
+                <nav>
+                <?php wp_nav_menu(array('theme_location'=>'Sidebar Wordpress Menu'));?>
+                </nav>
+                </div>
+            </div>
+
+            <!-- sidebar mobile menu -->
+            <div class="sidebar-mobile sidebarall">
+                <p class="sidebar-title">Mobile</p>  
+                <div class="other-menu-m">
+                <nav>
+                <?php wp_nav_menu(array('theme_location'=>'Sidebar Mobile Menu'));?>
+                </nav>
+                </div>
+            </div>
+
+             <!-- sidebar cms menu -->
+            <div class="sidebar-cms sidebarall">
+                <p class="sidebar-title-cms">CMS & Ecommerce</p>  
+                <div class="other-menu2">   
+                    <nav >
+                        <?php wp_nav_menu(array('theme_location'=>'Sidebar CMS Menu'));?>
+                        <!-- <ul >
+                                <li ><a href="">Ecommerce</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">j</a></li>
+                                        <li><a href="">j</a></li>
+                                        <li><a href="">j</a></li>
+                                        <li><a href="">j</a></li>
+                                    </ul>
+                                </li>
+                                <li class="ecommerce"><a href="">Others</a>
+                                    <ul class="dropdown">
+                                        <li><a href="">k</a></li>
+                                        <li><a href="">k</a></li>
+                                        <li><a href="">k</a></li>
+                                        <li><a href="">k</a></li>
+                                    </ul></li>
+                                <li><a href="">CMS</a></li>
+                        </ul>  -->
+                    </nav>
+                </div>  
+            </div>
+
+              <!-- sidebar other menu -->
+              <div class="sidebar-script sidebarall">
+                <p class="sidebar-title">Others</p>  
+                <div class="other-menu">
+                <nav>
+                    <?php wp_nav_menu(array('theme_location'=>'Sidebar Other Menu'));?>
+                </nav>
+                </div>
+            </div>
+
+            
             <!-- monthly  -->
             <div class="monthly-box">
                 <h2>Monthly Popular</h2>
