@@ -43,5 +43,9 @@
         <p class="comment-details"><?php echo $my_options['opt-comment4'];?></p>
     </div>
 
+    <div class="add-part">
+    
+    <?php echo $my_options['opt-code-editor-2'];?>
+    </div>
 
 </div>

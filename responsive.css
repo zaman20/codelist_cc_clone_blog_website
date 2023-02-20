@@ -1,6 +1,6 @@
  @media only screen and (min-width:200px) and (max-width:999px){
     .top-bar{display:none;}
-    .logo-area {width: 50%;margin-left: 20px;}
+    .logo-area {width: 50%;margin-left:20px;}
     .menu-area {width:44%;margin-top: 0px;float: right;}
     .login-area{width: 0;}
     .menu-area span{margin-left: 5px;font-size: 23px;}
@@ -24,7 +24,7 @@
     .open-menu {font-size: 22px;}
     .top-bar-phone{display: block;}
     .menu-area.tab{display: block;}
-    .logo-area img{width: 240px;}
+    .logo-area img{width: 250px;margin-left: 34px;}
     input.search-field{width:445px;}
     .search-submit{width:140px;}
     .advanced-search{width:50%;}
@@ -37,6 +37,8 @@
 
 @media only screen and (min-width:200px) and (max-width:760px){
     .menu-area{width: 23%;}
+    .logo-area {width: 50%;margin-left:0px;}
+    .advanced-search {width: 38%;}
     .menu-area.tab{display: none;}
     .phone{display: block;}
     .menu-area.phone li{padding:0px 2px;}
@@ -46,22 +48,24 @@
     .fa-solid.fa-user.userIcon {margin-left: 32px;font-size: 17px;}
     input.search-field{width:302px;}
     .search-submit{width: 111px;}
-    .right-side-part{width:96%;}
+    .right-side-part{width:100%;}
     .content-box{width: 50%;}
     .recent-post-content-box img{width:95px;}
-    .post-image img{width:98%;}
+    .post-image img{width:100%;}
     .footer-content{width: 80%; margin: 0 auto;}
     .footer-left{width: 100%;display: block;margin-left: 0px;margin-bottom: 15px;text-align: center;float: none;}
     i.fa-solid.fa-ellipsis{position: relative;margin-left: -82px;}
     .footer-logo{position: absolute;}
     .footer-right{width: 100%;text-align: center;}
     .footer-part{height: 328px;}
-    .content-part-title{margin-left: 25px;}
+    .content-part-title{margin-left: 4px;}
     .content-part-title::after{width: 48%;}
-    .content-box{width: 95%;margin-left: 23px;}
+    .content-box{width: 100%;margin-left: 0px;}
     .login-form{width:75%;left: 13%;}
     .search-form, .searchform{width: 100%;}
-    .recent-post-box, .recent-comment-box{width: 97%;}
+    .recent-post-box, .recent-comment-box{width: 100%;}
+    .nobg::after{width: 59%; left:169px;}
+    .logo-area img {width: 100%;margin-left: 0px;}
 
 }
 
@@ -70,8 +74,8 @@
     .tab{display: none;}
     .phone{display: block;}
     .logo-area{width: 50%;}
-    .menu-area{width: 34%;}
-    .content-box{width: 90%;margin-left: 20px;}
+    .menu-area{width: 23%;}
+    .content-box{width: 100%;margin-left: 0px;}
     .search-bar{top:-13%}
     .recent-post-content-box img{width: 99px;}
     .footer-part {height: 458px;padding: 31px 5px;}
@@ -100,7 +104,14 @@
     .search-bar{height: 111px;}
     .advanced-search{width: 36%;margin-top: -12px;font-size: 12px;}
 } 
-
+@media only screen and (min-width:200px) and (max-width:440px){
+    .menu-area{width:30%;}
+    .menu-area.tab a, .menu-area.phone a{margin-left: 1px;}
+    .fa-solid.fa-user.userIcon{font-size: 17px;margin-left: 21px;}
+    input.search-field{width: 62%;float: left;margin-top: 12px;}
+    .search-submit{width: 110px;margin-top: -35px;}
+    .advanced-search{margin-top: -15px;}
+}
 @media only screen and (min-width:200px) and (max-width:320px){
     .logo-area {width: 35%;}
     .logo-area img{width: 100%;}

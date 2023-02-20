@@ -25,7 +25,9 @@
                     </div>
                     <!-- right side are -->
                     <div class="login-area">
-                        <a href="<?php echo home_url();?>/register/" class="register-btn"><i class="fa-solid fa-arrow-right "></i>Register</a>
+                        <nav>
+                            <?php wp_nav_menu(array('theme_location'=>'Register Menu'));?>
+                        </nav>
                         <p>Welcome,</p>
                         <nav><?php wp_nav_menu(array('theme_location'=>'User Menu'));?></nav>
                         <!-- <ul>

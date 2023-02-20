@@ -38,7 +38,7 @@
                         <div class="post-content">
                             <?php the_post_thumbnail(); ?>
                         <p class="post-details"><?php the_content();?></p>
-                        <p class="link-box"><?php the_field('links_box');?></p>
+                        <div class="link-box"><?php the_field('links_box');?></div>
                         <p class="credit"><?php the_field('bottom_text');?></p>
 
                         </div>

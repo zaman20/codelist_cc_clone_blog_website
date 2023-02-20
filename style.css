@@ -215,25 +215,33 @@ body a{
       
 }
 .register-btn {
-    margin-right: 30px;
     height: 35px;
+    margin-right: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-top: 6px;
+    padding-top: 6px !important;
     padding-right: 10px;
     padding-left: 10px;
     box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
     background-color: #fff;
-    color: #000;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
+   
     border-radius: 3px;
 }
 .register-btn:hover{background: #f8f8f8;}
-.register-btn i{margin-right: 4px;font-size: 13px;}
+.register-btn::before{
+    content:'';
+}
+
+.register-btn a {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: #000;
+    line-height: 1.42857143;
+    text-align: center;
+}
 .login-area p{
-    margin-right: 9px;margin-top: 3px;
+    margin-left: 5px;
+    margin-top: 3px;
     font-family: 'Rubik';
     font-style: italic;
     font-size: 14px;
@@ -245,6 +253,7 @@ body a{
 .content-part {
     width: 73%;
     float: left;
+    margin-left: 20px;
 }
 .add-part-top img{
     width: 100%;
@@ -594,7 +603,7 @@ p.comment-details {
 .other-menu ul li:hover, .other-menu2 ul li a:hover, .other-menu-s ul li:hover ,.other-menu-m ul li:hover , .other-menu-w ul li:hover{
     background:#efefef;
 }
-
+.other-menu2 ul li a{padding:4px 10px;padding-right: 95px;}
 .other
 .sidebarall , .sidebar-cms{
     position: relative;
@@ -952,7 +961,6 @@ input#um-submit-btn:hover{background:#d23800;}
 }
 .page-title{font-weight: 400;
     color: #505050;
-    margin-left: 30px;
     text-transform: uppercase;
     font-size: 1.1rem;
     line-height: 1.2;
@@ -965,7 +973,6 @@ input#um-submit-btn:hover{background:#d23800;}
     width: 60%;
     position: absolute;
     top: 15px;
-    left:11%;
     border-top: 2px solid rgba(0, 0, 0, 0.05);
 }
 .search-box {

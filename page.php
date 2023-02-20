@@ -15,16 +15,17 @@
 
     <!-- body content -->
     <div class="content-area">
-       
+       <div class="container">
             <div class="content-part">
                 <h3 class="page-title"><?php the_title();?></h3>
                 <!-- content part -->
                 <?php the_content(); ?>
             </div>
-                
+               
 
             <!-- right side part -->
             <?php get_template_part('trending'); ?>
+        </div> 
     </div>
 
    .<!-- footer -->

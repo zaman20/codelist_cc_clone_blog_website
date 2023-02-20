@@ -1,7 +1,9 @@
 <!-- content part -->
+<?php $my_options = get_option('my_option');?>
 <div class="content-part">
     <div class="add-part-top">
-        <img src="<?php echo get_template_directory_uri()?>/img/Screenshot 2023-02-05 173658.png" alt="">
+    
+    <?php echo $my_options['opt-code-editor-1'];?>
     </div>
     <h3 class="content-part-title">Recently added <strong>Files</strong></h3>
 

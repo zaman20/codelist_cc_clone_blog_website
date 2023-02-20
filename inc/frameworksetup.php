@@ -58,6 +58,28 @@ if( class_exists( 'CSF' ) ) {
       )
     ) );
 
+    // Create a section for facebook
+    CSF::createSection( $prefix, array(
+      'title'  => 'Google ads ',
+      'fields' => array(
+  
+        array(
+          'id'       => 'opt-code-editor-1',
+          'type'     => 'code_editor',
+          'title'    => 'Google ads code 1',
+          'sanitize' => false,
+        ),
+        array(
+          'id'       => 'opt-code-editor-2',
+          'type'     => 'code_editor',
+          'title'    => 'Google add code 2',
+          'sanitize' => false,
+        ),
+        
+  
+      )
+    ) );
+
      // Create a section for comments
      CSF::createSection( $prefix, array(
       'title'  => 'Recent Comments',
