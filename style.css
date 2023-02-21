@@ -1,3 +1,24 @@
+/*
+Theme Name: WpFreeScript Custom WP Theme- by ZA SOFT
+Theme URI: https://wpfreescript.com
+Author: the WordPress team
+Author URI: https://zamanador.xyz/
+Description: WPFreeScript is a  canvas for your ideas and it makes the
+ block editor your best brush. With new modern patterns,
+  which allow you to create a beautiful website in a matter of seconds,
+  .Take it for a spin! See how Twenty Twenty-One elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpfreescript_theme,
+*/
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 body a, h2,h3,h4,h5,h6,p{
@@ -214,7 +235,7 @@ body a{
       
 }
 .register-btn {
-    margin-right: 13px;
+    margin-right: 23px;
     height: 35px;
     margin-left: 10px;
     /* width: 122px; */
@@ -246,7 +267,7 @@ body a{
     font-size: 14px;
 
 }
-.search-icon{margin-top: 3px; margin-left: 5px;}
+.search-icon{margin-top: 3px; margin-left: 25px;}
 .search-icon i{color: black;font-size: 18px;}
 
 .content-part {
@@ -260,6 +281,8 @@ body a{
 .add-part, .add-part-top{
     margin-bottom: 20px;
     margin-top:0px;
+    width: 90%;
+    margin: 0 auto;
 }
 .add-part img{width: 100%;}
 .content-box {
@@ -563,7 +586,7 @@ p.comment-details {
 .search-come{top:12px;}
 .search-icon-off{display: none;}
 .search-form,.searchform {
-    width: 80%;
+    width:1100px;
     margin: 0 auto;
     padding: 10px 10px;
     margin-top: 40px;
@@ -801,7 +824,7 @@ input.search-field {
 }
 .advanced-search {
     clear: both;
-    width: 37%;
+    width: 47%;
     float: right;
     margin-top: -17px;
     color: blue;

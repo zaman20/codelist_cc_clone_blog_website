@@ -4,7 +4,7 @@ function mainStyle(){
     //style css
     wp_enqueue_style('main_css',get_stylesheet_uri(),'','1.1.78');
     //responsive css
-    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.42');
+    wp_enqueue_style('responsive_css',get_template_directory_uri().'/responsive.css','','1.0.43');
     //font-awesome
     wp_enqueue_style('icon_lib',"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
     //google apis

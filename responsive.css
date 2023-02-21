@@ -33,6 +33,7 @@
     .material-symbols-outlined.open-menu {
         position: absolute;
       }
+    .post-content{width: 100%;}
 }
 
 @media only screen and (min-width:200px) and (max-width:760px){
@@ -125,3 +126,6 @@
     p.copyright-text{font-size: 12px;}
     .advanced-search{width: 36%;}
     .search-submit{margin-top:-30px; }
+
+
+}
