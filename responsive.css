@@ -1,4 +1,4 @@
- @media only screen and (min-width:200px) and (max-width:999px){
+@media only screen and (min-width:200px) and (max-width:999px){
     .top-bar{display:none;}
     .logo-area {width: 50%;margin-left:20px;}
     .menu-area {width:44%;margin-top: 0px;float: right;}
@@ -26,8 +26,8 @@
     .menu-area.tab{display: block;}
     .logo-area img{width: 250px;margin-left: 34px;}
     input.search-field{width:445px;}
-    .search-submit{width:140px;}
-    .advanced-search{width:50%;}
+    .search-submit{width:140px;margin-top: 5px;}
+    .advanced-search{width:47%;font-size: 14px;}
     .login-form{width:50%;}
     .content-box{width:45%;}
     .material-symbols-outlined.open-menu {
@@ -38,7 +38,7 @@
 @media only screen and (min-width:200px) and (max-width:760px){
     .menu-area{width: 23%;}
     .logo-area {width: 50%;margin-left:0px;}
-    .advanced-search {width: 38%;}
+    .advanced-search {width: 38%;font-size: 13px;}
     .menu-area.tab{display: none;}
     .phone{display: block;}
     .menu-area.phone li{padding:0px 2px;}
@@ -47,7 +47,7 @@
     .menu-area i {margin-right: 5px;}
     .fa-solid.fa-user.userIcon {margin-left: 32px;font-size: 17px;}
     input.search-field{width:302px;}
-    .search-submit{width: 111px;}
+    .search-submit{width: 111px;margin-top: 4px;padding: 5px;}
     .right-side-part{width:100%;}
     .content-box{width: 50%;}
     .recent-post-content-box img{width:95px;}
@@ -74,7 +74,7 @@
     .tab{display: none;}
     .phone{display: block;}
     .logo-area{width: 50%;}
-    .menu-area{width: 23%;}
+    .menu-area{width: 25%;}
     .content-box{width: 100%;margin-left: 0px;}
     .search-bar{top:-13%}
     .recent-post-content-box img{width: 99px;}
@@ -86,11 +86,10 @@
     .menu-area.tab{display: none;}
     .menu-area.phone{display:block;}
     .logo-area img{width: 100%;}
-    .search-bar{width:100%;height: 145px;}
+    .search-bar{width:100%;height: 117px;}
     .search-form, .searchform{position: relative;}
     input.search-field{width: 100%;font-size: 17px;margin-top: 13px;}
-    .search-submit {width:119px;margin-top: 4px;font-size: 14px;border-radius: 2px;margin-right: 0px;}
-    .advanced-search{margin-top: 8px;}
+    .search-submit {width:119px;margin-top: 15px;padding:4px;font-size: 13px;border-radius: 2px;margin-right: 0px;}
     .search-come{top:0px;}
     .login-form{width:80%;left:10%;}
     .registration-title{margin-left: 9px;}
@@ -101,21 +100,20 @@
     .cat-box{width:100%;}
     .button{margin-right: 25px;}
     .footer-part{height: 331px;}
-    .search-bar{height: 111px;}
-    .advanced-search{width: 36%;margin-top: -12px;font-size: 12px;}
+    .advanced-search{width: 29%;margin-top: -7px;font-size: 12px;}
 } 
 @media only screen and (min-width:200px) and (max-width:440px){
     .menu-area{width:30%;}
     .menu-area.tab a, .menu-area.phone a{margin-left: 1px;}
-    .fa-solid.fa-user.userIcon{font-size: 17px;margin-left: 21px;}
+    .fa-solid.fa-user.userIcon{font-size: 17px;margin-left:21px;}
     input.search-field{width: 62%;float: left;margin-top: 12px;}
-    .search-submit{width: 110px;margin-top: -35px;}
-    .advanced-search{margin-top: -15px;}
+    .search-submit{width: 110px;margin-top: 14px;padding: 3px;}
+    .advanced-search{margin-top: -15px;width: 33%;}
 }
-@media only screen and (min-width:200px) and (max-width:320px){
+@media only screen and (min-width:200px) and (max-width:360px){
     .logo-area {width: 35%;}
     .logo-area img{width: 100%;}
-    .menu-area{width: 52%;}
+    .menu-area{width:29%;}
     .menu-area.phone i{font-size: 14px;}
     .menu-area span{font-size: 20px;}
     .fa-solid.fa-user.userIcon{font-size: 14px;}
@@ -125,4 +123,5 @@
     .footer-left{margin-left: 0px;}
     .footer-right p{font-size: 12px;margin-bottom: 30px;}
     p.copyright-text{font-size: 12px;}
-}
+    .advanced-search{width: 36%;}
+    .search-submit{margin-top:-30px; }
